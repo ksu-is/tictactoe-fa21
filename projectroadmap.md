@@ -47,3 +47,10 @@ for i in range(3):
 label=Label(text=a+"'s Chance",font=('arial',20,'bold'))
 label.grid(row=3,column=0,columnspan=3)
 root.mainloop()
+
+
+
+[] play with the spacing, fonts, and colors
+[] create the random number generator
+[] create one or two player option buttons for the start screen
+

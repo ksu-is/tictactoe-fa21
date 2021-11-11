@@ -18,3 +18,6 @@ I got inspiration from a tutorial and a similar project, linked below.
 
 https://www.codespeedy.com/tic-tac-toe-gui-in-python-using-tkinter/
 https://github.com/abhishek305/Tic-Tac-Toe-Game-in-python-3-Tkinter/blob/master/my%20tic%20tac%202.py
+
+
+#I will be adding onto the code making the interface a lot smoother and prettier. I will also make it so that one person can have the option of playing against the "computer" which will basically be a 1-9 random number generator
