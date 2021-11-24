@@ -1,6 +1,24 @@
 from tkinter import *
 from tkinter import messagebox
-import random as r
+root = Tk()
+root.title("Tic Tac Toe")
+root.iconbitmap() #######
+
+b1 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b1))
+b2 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b2))
+b3 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b3))
+
+b4 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b4))
+b5 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b5))
+b6 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b6))
+
+b7 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b7))
+b8 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b8))
+b9 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b9))
+
+
+
+
 def button(frame):          #Function to define a button
     b=Button(frame,padx=1,bg="papaya whip",width=3,text="   ",font=('arial',60,'bold'),relief="sunken",bd=10)
     return b
@@ -28,6 +46,7 @@ def check():                #Checks for victory or Draw
     elif(b[0][0]["state"]==b[0][1]["state"]==b[0][2]["state"]==b[1][0]["state"]==b[1][1]["state"]==b[1][2]["state"]==b[2][0]["state"]==b[2][1]["state"]==b[2][2]["state"]==DISABLED):
         messagebox.showinfo("Tied!!","The match ended in a draw")
         reset()
+        
 def click(row,col):
         b[row][col].config(text=a,state=DISABLED,disabledforeground=colour[a])
         check()
