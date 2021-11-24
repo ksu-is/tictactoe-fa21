@@ -4,6 +4,12 @@ root = Tk()
 root.title("Tic Tac Toe")
 root.iconbitmap() #######
 
+#button clicked function
+def b_click(b):
+    pass
+
+
+#button build
 b1 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b1))
 b2 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b2))
 b3 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b3))
@@ -16,7 +22,18 @@ b7 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = 
 b8 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b8))
 b9 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b9))
 
+#button grid
+b1.grid(row = 0,collum = 0)
+b2.grid(row = 0,collum = 1)
+b3.grid(row = 0,collum = 2)
 
+b4.grid(row = 1,collum = 0)
+b5.grid(row = 1,collum = 1)
+b6.grid(row = 1,collum = 2)
+
+b7.grid(row = 2,collum = 0)
+b8.grid(row = 2,collum = 1)
+b9.grid(row = 2,collum = 2)
 
 
 def button(frame):          #Function to define a button
