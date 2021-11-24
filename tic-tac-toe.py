@@ -4,10 +4,190 @@ root = Tk()
 root.title("Tic Tac Toe")
 root.iconbitmap() #######
 
+# X will awlays start(human)
+clicked = True
+count = 0
+
+# this will disable all buttons
+def disable_buttons():
+    b1.config(state=DISABLED)
+    b2.config(state=DISABLED)
+    b3.config(state=DISABLED)
+    b4.config(state=DISABLED)
+    b5.config(state=DISABLED)
+    b6.config(state=DISABLED)
+    b7.config(state=DISABLED)
+    b8.config(state=DISABLED)
+    b9.config(state=DISABLED)
+
+#this will check to see if x wins(human)
+def check_if_won():
+    global winner
+    winner = False
+
+    if b1["text"] == "x" and b2["text"] == "x" and b3["text"] == "x":
+        b1.config(bg="green")
+        b2.config(bg="green")
+        b3.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "X Wins!")
+        disable_buttons()
+
+    elif b4["text"] == "x" and b5["text"] == "x" and b6["text"] == "x":
+        b4.config(bg="green")
+        b5.config(bg="green")
+        b6.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "X Wins!")
+        disable_buttons()
+
+    elif b7["text"] == "x" and b8["text"] == "x" and b9["text"] == "x":
+        b7.config(bg="green")
+        b8.config(bg="green")
+        b9.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "X Wins!")
+        disable_buttons()
+
+    elif b1["text"] == "x" and b4["text"] == "x" and b7["text"] == "x":
+        b1.config(bg="green")
+        b4.config(bg="green")
+        b7.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "X Wins!")
+        disable_buttons()
+
+    elif b2["text"] == "x" and b5["text"] == "x" and b8["text"] == "x":
+        b2.config(bg="green")
+        b5.config(bg="green")
+        b8.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "X Wins!")
+        disable_buttons()
+
+    elif b2["text"] == "x" and b5["text"] == "x" and b8["text"] == "x":
+        b2.config(bg="green")
+        b5.config(bg="green")
+        b8.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "X Wins!")
+        disable_buttons()
+
+    elif b3["text"] == "x" and b6["text"] == "x" and b9["text"] == "x":
+        b3.config(bg="green")
+        b6.config(bg="green")
+        b9.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "X Wins!")
+        disable_buttons()
+
+    elif b1["text"] == "x" and b5["text"] == "x" and b9["text"] == "x":
+        b1.config(bg="green")
+        b5.config(bg="green")
+        b9.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "X Wins!")
+        disable_buttons()
+
+#checks to see if o wins(computer)
+
+    elif b3["text"] == "o" and b5["text"] == "o" and b7["text"] == "o":
+        b3.config(bg="green")
+        b5.config(bg="green")
+        b7.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "O Wins!")
+        disable_buttons()
+
+    elif b1["text"] == "o" and b2["text"] == "o" and b3["text"] == "o":
+        b1.config(bg="green")
+        b2.config(bg="green")
+        b3.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "O Wins!")
+        disable_buttons()
+
+    elif b4["text"] == "o" and b5["text"] == "o" and b6["text"] == "o":
+        b4.config(bg="green")
+        b5.config(bg="green")
+        b6.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "O Wins!")
+        disable_buttons()
+
+    elif b7["text"] == "o" and b8["text"] == "o" and b9["text"] == "o":
+        b7.config(bg="green")
+        b8.config(bg="green")
+        b9.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "O Wins!")
+        disable_buttons()
+
+    elif b1["text"] == "o" and b4["text"] == "o" and b7["text"] == "o":
+        b1.config(bg="green")
+        b4.config(bg="green")
+        b7.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "O Wins!")
+        disable_buttons()
+
+    elif b2["text"] == "o" and b5["text"] == "o" and b8["text"] == "o":
+        b2.config(bg="green")
+        b5.config(bg="green")
+        b8.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "O Wins!")
+        disable_buttons()
+
+    elif b2["text"] == "o" and b5["text"] == "o" and b8["text"] == "o":
+        b2.config(bg="green")
+        b5.config(bg="green")
+        b8.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "O Wins!")
+        disable_buttons()
+
+    elif b3["text"] == "o" and b6["text"] == "o" and b9["text"] == "o":
+        b3.config(bg="green")
+        b6.config(bg="green")
+        b9.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "O Wins!")
+        disable_buttons()
+
+    elif b1["text"] == "o" and b5["text"] == "o" and b9["text"] == "o":
+        b1.config(bg="green")
+        b5.config(bg="green")
+        b9.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "O Wins!")
+        disable_buttons()
+
+    elif b3["text"] == "o" and b5["text"] == "o" and b7["text"] == "o":
+        b3.config(bg="green")
+        b5.config(bg="green")
+        b7.config(bg="green")
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "O Wins!")
+        disable_buttons()
+
+
 #button clicked function
 def b_click(b):
-    pass
+    global clicked, count
 
+    if b["text"] == " " and clicked == True:
+        b["text"] = "x"
+        clicked = False
+        count += 1
+        check_if_won()
+    elif b["text"] == " " and clicked == False:
+        b["text"] = "o"
+        clicked = True
+        count += 1
+        check_if_won()
+    else:
+        messagebox.showerror("Tic Tac Toe", "This box has already been chosen, please choose a different one!")
 
 #button build
 b1 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b1))
@@ -23,63 +203,14 @@ b8 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = 
 b9 = Button(root, text = "  ", font = ("Arial", 20), height = 3, width = 6,bg = "SystemButtonFace", command = lambda: b_click(b9))
 
 #button grid
-b1.grid(row = 0,collum = 0)
-b2.grid(row = 0,collum = 1)
-b3.grid(row = 0,collum = 2)
+b1.grid(row = 0,column = 0)
+b2.grid(row = 0,column = 1)
+b3.grid(row = 0,column = 2)
 
-b4.grid(row = 1,collum = 0)
-b5.grid(row = 1,collum = 1)
-b6.grid(row = 1,collum = 2)
+b4.grid(row = 1,column = 0)
+b5.grid(row = 1,column = 1)
+b6.grid(row = 1,column = 2)
 
-b7.grid(row = 2,collum = 0)
-b8.grid(row = 2,collum = 1)
-b9.grid(row = 2,collum = 2)
-
-
-def button(frame):          #Function to define a button
-    b=Button(frame,padx=1,bg="papaya whip",width=3,text="   ",font=('arial',60,'bold'),relief="sunken",bd=10)
-    return b
-def change_a():             #Function to change the operand for the next player
-    global a
-    for i in ['O','X']:
-        if not(i==a):
-            a=i
-            break
-def reset():                #Resets the game
-    global a
-    for i in range(3):
-        for j in range(3):
-                b[i][j]["text"]=" "
-                b[i][j]["state"]=NORMAL
-    a=r.choice(['O','X'])
-def check():                #Checks for victory or Draw
-    for i in range(3):
-            if(b[i][0]["text"]==b[i][1]["text"]==b[i][2]["text"]==a or b[0][i]["text"]==b[1][i]["text"]==b[2][i]["text"]==a):
-                    messagebox.showinfo("Congrats!!","'"+a+"' has won")
-                    reset()
-    if(b[0][0]["text"]==b[1][1]["text"]==b[2][2]["text"]==a or b[0][2]["text"]==b[1][1]["text"]==b[2][0]["text"]==a):
-        messagebox.showinfo("Congrats!!","'"+a+"' has won")
-        reset()   
-    elif(b[0][0]["state"]==b[0][1]["state"]==b[0][2]["state"]==b[1][0]["state"]==b[1][1]["state"]==b[1][2]["state"]==b[2][0]["state"]==b[2][1]["state"]==b[2][2]["state"]==DISABLED):
-        messagebox.showinfo("Tied!!","The match ended in a draw")
-        reset()
-        
-def click(row,col):
-        b[row][col].config(text=a,state=DISABLED,disabledforeground=colour[a])
-        check()
-        change_a()
-        label.config(text=a+"'s Chance")
-###############   Main Program #################
-root=Tk()                   #Window defined
-root.title("Tic-Tac-Toe")   #Title given
-a=r.choice(['O','X'])       #Two operators defined
-colour={'O':"deep sky blue",'X':"lawn green"}
-b=[[],[],[]]
-for i in range(3):
-        for j in range(3):
-                b[i].append(button(root))
-                b[i][j].config(command= lambda row=i,col=j:click(row,col))
-                b[i][j].grid(row=i,column=j)
-label=Label(text=a+"'s Chance",font=('arial',20,'bold'))
-label.grid(row=3,column=0,columnspan=3)
-root.mainloop()
+b7.grid(row = 2,column = 0)
+b8.grid(row = 2,column = 1)
+b9.grid(row = 2,column = 2)
